@@ -38,5 +38,10 @@ public class Tortoise extends Thread {
                 System.out.println("The Tortoise has reached the finish line!");
                 break;
         }
+        try {
+            Thread.sleep(3000L);
+        } catch (InterruptedException e) {
+            System.err.println("The tortoise has lost the path!");
+        }
     }
 }
